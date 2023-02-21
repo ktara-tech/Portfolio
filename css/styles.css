@@ -1,0 +1,129 @@
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
+
+body{
+font-family: 'Open Sans', sans-serif;
+font-weight: bold;
+color: #FFFAA4;
+background-color: black;
+}
+.nav-link{
+color: #75FF33;
+}
+.nav{
+--bs-nav-link-hover-color:cream;
+}
+
+.btn-primary{
+--bs-btn-color:#75FF33;
+--bs-btn-bg:black;
+--bs-btn-hover-color: #FFFAA4;
+--bs-btn-hover-bg:#153E90;
+font-weight: bold;
+ }
+ #title, .container{
+ margin-bottom:200px;
+ }
+.fade-in-btn{
+margin:auto;
+width:40%;
+animation:fadeIn 20s;
+}
+
+.type{
+margin-top: 25%;
+color: #75FF33;
+height: 100%;
+}
+.line_1, .line_2 {
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide text behind the cursor */
+  margin: 0.5rem auto;
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  width: auto;
+  }
+
+.line_1 {
+  border-right: 2px solid rgba(17, 17, 17, 0.9);
+  /* define animation types for text + cursor */
+  animation: animated-text__1 3s steps(30, end) 1s 1 normal both,
+    animated-cursor__1 700ms steps(30, end) 8;
+}
+
+.line_2 {
+  border-right: 2px solid rgba(17, 17, 17, 0.9);
+  margin-bottom: 40px;
+
+  /* define animation types for text + cursor */
+  animation: animated-text__2 3s steps(30, end) 1s 1 normal both,
+    animated-cursor__2 700ms steps(30, end) infinite;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+@keyframes animated-cursor__1 {
+  from { border-right-color: rgba(17, 17, 17, 0.9);  }
+  to { border-right-color: #75FF33;  }
+}
+
+@keyframes animated-cursor__2 {
+  from { border-right-color: rgba(17, 17, 17, 0.9);  }
+  to {  border-right-color: #75FF33;  }
+}
+
+@keyframes animated-text__1 {
+  from {width: 0;}
+  to {width: 100%;}
+}
+
+@keyframes animated-text__2 {
+  from {width: 0;}
+  to {width: 320px;}
+}
+@keyframes fadeIn{
+0% { opacity:0;}
+100% { opacity:1;}
+}
+#contact .container{
+background-color: black;
+}
+.email{
+display: flex;
+}
+.fa-linkedin{
+position: relative;
+right :30px;
+}
+.contact{
+position: relative;
+right: 50px;
+}
+.contact, .linkedin{
+padding-left: 30px;
+}
+.contact, .nav-link{
+color:#20c997;
+--bs-nav-link-hover-color: white;
+}
+
+.info{
+position:absolute;
+top:45%;
+left: 30%;
+color:white;
+font-family: Ubuntu;
+}
+#accordion{
+position: absolute;
+top:30%;
+left: 20%;
+right:20%;
+}
+.project-list{
+position:absolute;
+top: 30%;
+text-align: center;
+}
